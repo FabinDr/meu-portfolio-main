@@ -6,11 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fabio Duarte - Analista de Dados</title>
     <meta name="description" content="Portfólio de Fabio Duarte - Analista de Dados especializado em transformar dados em insights valiosos">
+    <meta name="keywords" content="analista de dados, python, sql, power bi, machine learning, data science">
+    <meta name="author" content="Fabio Duarte">
+    <meta property="og:title" content="Fabio Duarte - Analista de Dados">
+    <meta property="og:description" content="Especialista em transformar dados complexos em insights estratégicos">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://fabioduarte.dev">
+    <meta property="og:image" content="perfil-img.png">
+    <meta name="twitter:card" content="summary_large_image">
+    <link rel="canonical" href="https://fabioduarte.dev">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+    <link rel="apple-touch-icon" href="logo.svg">
+    <meta name="theme-color" content="#00d4ff">
 </head>
 
 <body>
@@ -34,12 +46,17 @@
             </nav>
 
             <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span class="sr-only">Menu</span>
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
         </div>
     </header>
+
+    <button class="theme-toggle" aria-label="Alternar tema">
+        <i class='bx bx-sun'></i>
+    </button>
 
     <main>
         <section class="hero" id="home">
@@ -333,18 +350,30 @@
                 <div class="section-header">
                     <span class="section-tag">Portfolio</span>
                     <h2 class="section-title">Meus Projetos</h2>
+                    <p class="section-description">
+                        Explore alguns dos meus trabalhos mais recentes em análise de dados, 
+                        machine learning e desenvolvimento de soluções inovadoras.
+                    </p>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">Todos</button>
+                    <button class="filter-btn" data-filter="data-analysis">Análise de Dados</button>
+                    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
+                    <button class="filter-btn" data-filter="web-dev">Desenvolvimento</button>
+                    <button class="filter-btn" data-filter="dashboard">Dashboards</button>
                 </div>
 
                 <div class="projects-grid">
-                    <div class="project-card" data-aos="fade-up">
+                    <div class="project-card animate-element" data-category="data-analysis dashboard">
                         <div class="project-image">
                             <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Análise de Vendas">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
                                         <i class='bx bx-link-external'></i>
                                     </a>
-                                    <a href="#" class="project-link" aria-label="Ver código">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -362,15 +391,15 @@
                         </div>
                     </div>
 
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-card animate-element" data-category="machine-learning">
                         <div class="project-image">
                             <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Predição de Preços">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
                                         <i class='bx bx-link-external'></i>
                                     </a>
-                                    <a href="#" class="project-link" aria-label="Ver código">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -388,15 +417,15 @@
                         </div>
                     </div>
 
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="project-card animate-element" data-category="web-dev">
                         <div class="project-image">
                             <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="API de Dados">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
                                         <i class='bx bx-link-external'></i>
                                     </a>
-                                    <a href="#" class="project-link" aria-label="Ver código">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -414,15 +443,15 @@
                         </div>
                     </div>
 
-                    <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="project-card animate-element" data-category="dashboard data-analysis">
                         <div class="project-image">
                             <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dashboard Financeiro">
                             <div class="project-overlay">
                                 <div class="project-links">
-                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
                                         <i class='bx bx-link-external'></i>
                                     </a>
-                                    <a href="#" class="project-link" aria-label="Ver código">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
                                         <i class='bx bxl-github'></i>
                                     </a>
                                 </div>
@@ -436,6 +465,58 @@
                                 <span>D3.js</span>
                                 <span>Python</span>
                                 <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="machine-learning data-analysis">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Análise Preditiva">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sistema de Análise Preditiva</h3>
+                            <p>Modelo avançado de machine learning para previsão de tendências de mercado com análise de sentimento e processamento de linguagem natural.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>NLTK</span>
+                                <span>Streamlit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="web-dev dashboard">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Plataforma Analytics">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Plataforma de Analytics</h3>
+                            <p>Aplicação web completa para análise de dados em tempo real com dashboards interativos e relatórios automatizados.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Chart.js</span>
+                                <span>MongoDB</span>
                             </div>
                         </div>
                     </div>
@@ -463,7 +544,7 @@
 
                 <div class="contact-content">
                     <div class="contact-info">
-                        <div class="contact-item" data-aos="fade-up">
+                        <div class="contact-item animate-element">
                             <div class="contact-icon">
                                 <i class='bx bx-envelope'></i>
                             </div>
@@ -473,7 +554,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="contact-item animate-element">
                             <div class="contact-icon">
                                 <i class='bx bxl-linkedin'></i>
                             </div>
@@ -483,7 +564,7 @@
                             </div>
                         </div>
 
-                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="contact-item animate-element">
                             <div class="contact-icon">
                                 <i class='bx bx-map'></i>
                             </div>
@@ -494,12 +575,37 @@
                         </div>
                     </div>
 
-                    <div class="contact-cta">
-                        <p>Acesse meu LinkedIn para ver experiências completas e certificados</p>
-                        <a href="https://www.linkedin.com/in/fabioduarte-ic/" target="_blank" class="btn btn-primary">
-                            <span>Conectar no LinkedIn</span>
-                            <i class='bx bxl-linkedin'></i>
-                        </a>
+                    <div class="contact-form-container">
+                        <form class="contact-form">
+                            <div class="form-group">
+                                <label for="name">Nome</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Mensagem</label>
+                                <textarea id="message" name="message" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Enviar Mensagem</span>
+                                <i class='bx bx-send'></i>
+                            </button>
+                        </form>
+                        
+                        <div class="contact-cta">
+                            <p>Ou conecte-se comigo no LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/fabioduarte-ic/" target="_blank" class="btn btn-outline">
+                                <span>LinkedIn</span>
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -523,6 +629,24 @@
     </footer>
 
     <script src="script.js"></script>
+    
+    <!-- Schema.org structured data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Fabio Duarte",
+        "jobTitle": "Analista de Dados",
+        "description": "Especialista em transformar dados complexos em insights estratégicos",
+        "url": "https://fabioduarte.dev",
+        "sameAs": [
+            "https://www.linkedin.com/in/fabioduarte-ic/",
+            "https://github.com/FabinDr"
+        ],
+        "knowsAbout": ["Python", "SQL", "Power BI", "Machine Learning", "Data Science", "Node.js"],
+        "alumniOf": "Universidade Federal do Maranhão"
+    }
+    </script>
 </body>
 
 </html>

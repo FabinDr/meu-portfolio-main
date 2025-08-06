@@ -1,0 +1,20 @@
+{
+  "name": "Fabio Duarte - Analista de Dados",
+  "short_name": "Fabio Portfolio",
+  "description": "Portfólio profissional de Fabio Duarte - Analista de Dados",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f0f23",
+  "theme_color": "#00d4ff",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "logo.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "pt-BR"
+}
