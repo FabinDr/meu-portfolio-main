@@ -515,6 +515,25 @@ const performance = {
 
 // Inicialização
 document.addEventListener('DOMContentLoaded', () => {
+  // Carregar módulos de acessibilidade
+  const script1 = document.createElement('script');
+  script1.src = 'translations.js';
+  document.head.appendChild(script1);
+  
+  const script2 = document.createElement('script');
+  script2.src = 'audio.js';
+  document.head.appendChild(script2);
+  
+  // Aguardar carregamento dos módulos
+  setTimeout(() => {
+    if (window.translator) {
+      translator.init();
+    }
+    if (window.audioAccessibility) {
+      audioAccessibility.init();
+    }
+  }, 100);
+  
   cursor.init();
   navigation.init();
   typewriter.init();

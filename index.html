@@ -37,12 +37,12 @@
             </div>
 
             <nav class="navbar">
-                <a href="#home" class="nav-link active">Home</a>
-                <a href="#about" class="nav-link">Sobre</a>
-                <a href="#experience" class="nav-link">Experiência</a>
-                <a href="#skills" class="nav-link">Habilidades</a>
-                <a href="#projects" class="nav-link">Projetos</a>
-                <a href="#contact" class="nav-link">Contato</a>
+                <a href="#home" class="nav-link active" data-translate="home">Home</a>
+                <a href="#about" class="nav-link" data-translate="about">Sobre</a>
+                <a href="#experience" class="nav-link" data-translate="experience">Experiência</a>
+                <a href="#skills" class="nav-link" data-translate="skills">Habilidades</a>
+                <a href="#projects" class="nav-link" data-translate="projects">Projetos</a>
+                <a href="#contact" class="nav-link" data-translate="contact">Contato</a>
             </nav>
 
             <button class="mobile-menu-btn" id="mobile-menu-btn">
@@ -54,35 +54,43 @@
         </div>
     </header>
 
-    <button class="theme-toggle" aria-label="Alternar tema">
-        <i class='bx bx-sun'></i>
-    </button>
+    <div class="accessibility-controls">
+        <button class="accessibility-btn theme-toggle" aria-label="Alternar tema">
+            <i class='bx bx-sun'></i>
+        </button>
+        <button class="accessibility-btn lang-toggle" aria-label="Alterar idioma">
+            <span class="lang-text">EN</span>
+        </button>
+        <button class="accessibility-btn audio-toggle" aria-label="Ativar áudio">
+            <i class='bx bx-volume-mute'></i>
+        </button>
+    </div>
 
     <main>
         <section class="hero" id="home">
             <div class="hero-content">
                 <div class="hero-text">
                     <div class="hero-greeting">
-                        <span class="greeting-text">Olá, eu sou</span>
+                        <span class="greeting-text" data-translate="greeting">Olá, eu sou</span>
                     </div>
                     <h1 class="hero-title">
-                        Fabio <span class="highlight">Duarte</span>
+                        <span data-translate="heroTitle">Fabio</span> <span class="highlight">Duarte</span>
                     </h1>
                     <div class="hero-subtitle">
                         <span class="typing-text"></span>
                         <span class="cursor-blink">|</span>
                     </div>
-                    <p class="hero-description">
+                    <p class="hero-description" data-translate="heroDescription">
                         Especialista em transformar dados complexos em insights estratégicos que impulsionam decisões de negócio e geram valor real para organizações.
                     </p>
                     
                     <div class="hero-actions">
                         <a href="#projects" class="btn btn-primary">
-                            <span>Ver Projetos</span>
+                            <span data-translate="viewProjects">Ver Projetos</span>
                             <i class='bx bx-right-arrow-alt'></i>
                         </a>
                         <a href="#contact" class="btn btn-secondary">
-                            <span>Entre em Contato</span>
+                            <span data-translate="getInTouch">Entre em Contato</span>
                         </a>
                     </div>
 
@@ -122,47 +130,47 @@
 
             <div class="scroll-indicator">
                 <div class="scroll-line"></div>
-                <span>Scroll</span>
+                <span data-translate="scroll">Scroll</span>
             </div>
         </section>
 
         <section class="about" id="about">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Sobre mim</span>
-                    <h2 class="section-title">Quem sou eu</h2>
+                    <span class="section-tag" data-translate="aboutTag">Sobre mim</span>
+                    <h2 class="section-title" data-translate="aboutTitle">Quem sou eu</h2>
                 </div>
 
                 <div class="about-content">
                     <div class="about-text">
-                        <p class="about-intro">
+                        <p class="about-intro" data-translate="aboutIntro">
                             Sou um analista de dados apaixonado por descobrir padrões ocultos e transformar informações brutas em estratégias de negócio eficazes.
                         </p>
-                        <p>
+                        <p data-translate="aboutText1">
                             Com formação em Ciência e Tecnologia pela UFMA e experiência prática em desenvolvimento back-end, combino conhecimento técnico sólido com visão analítica para entregar soluções que realmente fazem a diferença.
                         </p>
-                        <p>
+                        <p data-translate="aboutText2">
                             Minha abordagem interdisciplinar me permite conectar dados, tecnologia e negócios de forma única, sempre buscando insights que impulsionem o crescimento e a inovação.
                         </p>
 
                         <div class="stats-grid">
                             <div class="stat-item">
                                 <span class="stat-number">2+</span>
-                                <span class="stat-label">Anos de Experiência</span>
+                                <span class="stat-label" data-translate="yearsExperience">Anos de Experiência</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">10+</span>
-                                <span class="stat-label">Projetos Concluídos</span>
+                                <span class="stat-label" data-translate="completedProjects">Projetos Concluídos</span>
                             </div>
                             <div class="stat-item">
                                 <span class="stat-number">5+</span>
-                                <span class="stat-label">Tecnologias</span>
+                                <span class="stat-label" data-translate="technologies">Tecnologias</span>
                             </div>
                         </div>
                     </div>
 
                     <div class="about-skills">
-                        <h3>Principais Competências</h3>
+                        <h3 data-translate="mainSkills">Principais Competências</h3>
                         <div class="skills-list">
                             <div class="skill-tag">Análise de Dados</div>
                             <div class="skill-tag">Python</div>
@@ -181,8 +189,8 @@
         <section class="experience" id="experience">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Trajetória</span>
-                    <h2 class="section-title">Experiência & Educação</h2>
+                    <span class="section-tag" data-translate="experienceTag">Trajetória</span>
+                    <h2 class="section-title" data-translate="experienceTitle">Experiência & Educação</h2>
                 </div>
 
                 <div class="timeline">
@@ -250,15 +258,15 @@
         <section class="skills" id="skills">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Tecnologias</span>
-                    <h2 class="section-title">Minhas Habilidades</h2>
+                    <span class="section-tag" data-translate="skillsTag">Tecnologias</span>
+                    <h2 class="section-title" data-translate="skillsTitle">Minhas Habilidades</h2>
                 </div>
 
                 <div class="skills-grid">
                     <div class="skill-category" data-aos="fade-up">
                         <div class="category-header">
                             <i class='bx bx-data'></i>
-                            <h3>Análise de Dados</h3>
+                            <h3 data-translate="dataAnalysis">Análise de Dados</h3>
                         </div>
                         <div class="skill-items">
                             <div class="skill-item">
@@ -287,7 +295,7 @@
                     <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
                         <div class="category-header">
                             <i class='bx bx-code-alt'></i>
-                            <h3>Desenvolvimento</h3>
+                            <h3 data-translate="development">Desenvolvimento</h3>
                         </div>
                         <div class="skill-items">
                             <div class="skill-item">
@@ -316,7 +324,7 @@
                     <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
                         <div class="category-header">
                             <i class='bx bx-brain'></i>
-                            <h3>Machine Learning</h3>
+                            <h3 data-translate="machineLearning">Machine Learning</h3>
                         </div>
                         <div class="skill-items">
                             <div class="skill-item">
@@ -348,20 +356,20 @@
         <section class="projects" id="projects">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Portfolio</span>
-                    <h2 class="section-title">Meus Projetos</h2>
-                    <p class="section-description">
+                    <span class="section-tag" data-translate="projectsTag">Portfolio</span>
+                    <h2 class="section-title" data-translate="projectsTitle">Meus Projetos</h2>
+                    <p class="section-description" data-translate="projectsDescription">
                         Explore alguns dos meus trabalhos mais recentes em análise de dados, 
                         machine learning e desenvolvimento de soluções inovadoras.
                     </p>
                 </div>
 
                 <div class="project-filters">
-                    <button class="filter-btn active" data-filter="all">Todos</button>
-                    <button class="filter-btn" data-filter="data-analysis">Análise de Dados</button>
-                    <button class="filter-btn" data-filter="machine-learning">Machine Learning</button>
-                    <button class="filter-btn" data-filter="web-dev">Desenvolvimento</button>
-                    <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+                    <button class="filter-btn active" data-filter="all" data-translate="all">Todos</button>
+                    <button class="filter-btn" data-filter="data-analysis" data-translate="dataAnalysisFilter">Análise de Dados</button>
+                    <button class="filter-btn" data-filter="machine-learning" data-translate="machineLearningFilter">Machine Learning</button>
+                    <button class="filter-btn" data-filter="web-dev" data-translate="webDev">Desenvolvimento</button>
+                    <button class="filter-btn" data-filter="dashboard" data-translate="dashboard">Dashboards</button>
                 </div>
 
                 <div class="projects-grid">
@@ -523,7 +531,7 @@
                 </div>
 
                 <div class="projects-cta">
-                    <a href="https://github.com/FabinDr" target="_blank" class="btn btn-outline">
+                    <a href="https://github.com/FabinDr" target="_blank" class="btn btn-outline" data-translate="viewAllProjects">
                         <span>Ver Todos os Projetos</span>
                         <i class='bx bxl-github'></i>
                     </a>
@@ -534,9 +542,9 @@
         <section class="contact" id="contact">
             <div class="container">
                 <div class="section-header">
-                    <span class="section-tag">Contato</span>
-                    <h2 class="section-title">Vamos Trabalhar Juntos</h2>
-                    <p class="section-description">
+                    <span class="section-tag" data-translate="contactTag">Contato</span>
+                    <h2 class="section-title" data-translate="contactTitle">Vamos Trabalhar Juntos</h2>
+                    <p class="section-description" data-translate="contactDescription">
                         Estou sempre aberto a novas oportunidades e projetos desafiadores. 
                         Entre em contato para discutirmos como posso ajudar sua empresa.
                     </p>
@@ -549,7 +557,7 @@
                                 <i class='bx bx-envelope'></i>
                             </div>
                             <div class="contact-details">
-                                <h3>Email</h3>
+                                <h3 data-translate="email">Email</h3>
                                 <p>fabio.duarte@email.com</p>
                             </div>
                         </div>
@@ -559,7 +567,7 @@
                                 <i class='bx bxl-linkedin'></i>
                             </div>
                             <div class="contact-details">
-                                <h3>LinkedIn</h3>
+                                <h3 data-translate="linkedin">LinkedIn</h3>
                                 <p>linkedin.com/in/fabioduarte-ic</p>
                             </div>
                         </div>
@@ -569,8 +577,8 @@
                                 <i class='bx bx-map'></i>
                             </div>
                             <div class="contact-details">
-                                <h3>Localização</h3>
-                                <p>São Luís, Maranhão</p>
+                                <h3 data-translate="location">Localização</h3>
+                                <p data-translate="locationValue">São Luís, Maranhão</p>
                             </div>
                         </div>
                     </div>
@@ -578,31 +586,31 @@
                     <div class="contact-form-container">
                         <form class="contact-form">
                             <div class="form-group">
-                                <label for="name">Nome</label>
-                                <input type="text" id="name" name="name" required>
+                                <label for="name" data-translate="name">Nome</label>
+                                <input type="text" id="name" name="name" data-translate="name" required>
                             </div>
                             <div class="form-group">
-                                <label for="email">Email</label>
-                                <input type="email" id="email" name="email" required>
+                                <label for="email" data-translate="email">Email</label>
+                                <input type="email" id="email" name="email" data-translate="email" required>
                             </div>
                             <div class="form-group">
-                                <label for="subject">Assunto</label>
-                                <input type="text" id="subject" name="subject" required>
+                                <label for="subject" data-translate="subject">Assunto</label>
+                                <input type="text" id="subject" name="subject" data-translate="subject" required>
                             </div>
                             <div class="form-group">
-                                <label for="message">Mensagem</label>
-                                <textarea id="message" name="message" required></textarea>
+                                <label for="message" data-translate="message">Mensagem</label>
+                                <textarea id="message" name="message" data-translate="message" required></textarea>
                             </div>
                             <button type="submit" class="btn btn-primary">
-                                <span>Enviar Mensagem</span>
+                                <span data-translate="sendMessage">Enviar Mensagem</span>
                                 <i class='bx bx-send'></i>
                             </button>
                         </form>
                         
                         <div class="contact-cta">
-                            <p>Ou conecte-se comigo no LinkedIn</p>
+                            <p data-translate="connectLinkedIn">Ou conecte-se comigo no LinkedIn</p>
                             <a href="https://www.linkedin.com/in/fabioduarte-ic/" target="_blank" class="btn btn-outline">
-                                <span>LinkedIn</span>
+                                <span data-translate="linkedin">LinkedIn</span>
                                 <i class='bx bxl-linkedin'></i>
                             </a>
                         </div>
@@ -616,18 +624,20 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-text">
-                    <p>&copy; 2025 Fabio Duarte. Todos os direitos reservados.</p>
+                    <p>&copy; 2025 Fabio Duarte. <span data-translate="footerText">Todos os direitos reservados.</span></p>
                 </div>
                 <div class="footer-links">
-                    <a href="#home">Home</a>
-                    <a href="#about">Sobre</a>
-                    <a href="#projects">Projetos</a>
-                    <a href="#contact">Contato</a>
+                    <a href="#home" data-translate="home">Home</a>
+                    <a href="#about" data-translate="about">Sobre</a>
+                    <a href="#projects" data-translate="projects">Projetos</a>
+                    <a href="#contact" data-translate="contact">Contato</a>
                 </div>
             </div>
         </div>
     </footer>
 
+    <script src="translations.js"></script>
+    <script src="audio.js"></script>
     <script src="script.js"></script>
     
     <!-- Schema.org structured data -->
