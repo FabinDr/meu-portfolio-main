@@ -1,154 +1,528 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fabio Duarte - Analista de Dados</title>
+    <meta name="description" content="Portfólio de Fabio Duarte - Analista de Dados especializado em transformar dados em insights valiosos">
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
     <header class="header">
-        <div>
-            <img class="img-logo" src="logo.svg" alt="">
-            <a href="#home" class="logo">Fabio<span> Duarte</span></a>
+        <div class="header-content">
+            <div class="logo-container">
+                <img class="img-logo" src="logo.svg" alt="Logo">
+                <a href="#home" class="logo">Fabio<span> Duarte</span></a>
+            </div>
+
+            <nav class="navbar">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Sobre</a>
+                <a href="#experience" class="nav-link">Experiência</a>
+                <a href="#skills" class="nav-link">Habilidades</a>
+                <a href="#projects" class="nav-link">Projetos</a>
+                <a href="#contact" class="nav-link">Contato</a>
+            </nav>
+
+            <button class="mobile-menu-btn" id="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
         </div>
-
-
-        <i class='bx bx-menu' id="menu-icon"></i>
-
-        <nav class="navbar">
-            <!-- <a href="#home" class="active">Home</a> -->
-            <a href="#about-me">Sobre</a>
-            <a href="#education">Experiências</a>
-            <a href="#testimonials">Tecnologias</a>
-            <a href="#projects">Projetos</a>
-            <a href="#contato">Contato</a>
-        </nav>
     </header>
 
-    <section class="home" id="home">
-        <div class="home-content">
-            <h1>Fabio <span> Duarte</span></h1>
-            <h3 class="text-animation"><span></span></h3>
-            <p> Transformando dados em tesouros</p>
-            <div class="social-icons">
-                <a href="https://www.linkedin.com/in/fabioduarte-ic/" target="_blank"><i
-                        class='bx bxl-linkedin'></i></a>
-                <a href="https://github.com/FabinDr" target="_blank"><i class='bx bxl-github'></i></a>
-                <a href="#"><i class='bx bxl-instagram-alt'></i></a>
-                <!-- <a href="#"></a> -->
-            </div>
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="hero-greeting">
+                        <span class="greeting-text">Olá, eu sou</span>
+                    </div>
+                    <h1 class="hero-title">
+                        Fabio <span class="highlight">Duarte</span>
+                    </h1>
+                    <div class="hero-subtitle">
+                        <span class="typing-text"></span>
+                        <span class="cursor-blink">|</span>
+                    </div>
+                    <p class="hero-description">
+                        Especialista em transformar dados complexos em insights estratégicos que impulsionam decisões de negócio e geram valor real para organizações.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary">
+                            <span>Ver Projetos</span>
+                            <i class='bx bx-right-arrow-alt'></i>
+                        </a>
+                        <a href="#contact" class="btn btn-secondary">
+                            <span>Entre em Contato</span>
+                        </a>
+                    </div>
 
-            <div class="btn-group">
-                <!-- <a href="#" class="btn">Venha</a> -->
-                <a href="#about-me" class="btn">Conheça meu trabalho</a>
-            </div>
-        </div>
-    </section>
-
-    <section class="about-me" id="about-me">
-        <div class="about-content">
-            <h2>Sobre mim</h3>
-                <p> sgadjajdhagdjghasgdhgahgdhagsmdahsdhahdhaghdghaghdghag</p>
-
-        </div>
-
-        <div class="about-img">
-            <img src="perfil-img.png" alt="Imagem de perfil">
-        </div>
-
-    </section>
-
-
-    <section class="education" id="education">
-        <h2 class="heading">Experiência</h2>
-        <div class="timeline-items">
-
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2018 - 2020</div>
-                <div class="timeline-content">
-                    <h3>Ensino Médio</h3>
-                    <p>dddddddddddddd</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/fabioduarte-ic/" target="_blank" class="social-link" aria-label="LinkedIn">
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
+                        <a href="https://github.com/FabinDr" target="_blank" class="social-link" aria-label="GitHub">
+                            <i class='bx bxl-github'></i>
+                        </a>
+                        <a href="#" class="social-link" aria-label="Instagram">
+                            <i class='bx bxl-instagram-alt'></i>
+                        </a>
+                    </div>
                 </div>
 
+                <div class="hero-visual">
+                    <div class="profile-card">
+                        <div class="profile-image">
+                            <img src="perfil-img.png" alt="Fabio Duarte">
+                            <div class="profile-glow"></div>
+                        </div>
+                        <div class="floating-elements">
+                            <div class="floating-icon" style="--delay: 0s">
+                                <i class='bx bx-data'></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 1s">
+                                <i class='bx bx-bar-chart-alt-2'></i>
+                            </div>
+                            <div class="floating-icon" style="--delay: 2s">
+                                <i class='bx bx-brain'></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2023 - </div>
-                <div class="timeline-content">
-                    <h3>Bacharelado Interdisciplinar em Ciência e Tecnologia - UFMA</h3>
-                    <p>Sou discente do curso de Ciência e Tecnologia na Universidade Federal do Maranhão, onde tenho
-                        a
-                        oportunidade de me desenvolver de forma interdisciplinar. Durante o curso, aprendo desde
-                        conceitos de Administração de Empresas até Ciência de Dados, Algoritmos e Estruturas de
-                        Dados,
-                        Probabilidade e Estatística, Fundamentos da Computação, Álgebra Linear, Engenharia de
-                        Software,
-                        entre outros. Após concluir o ciclo básico no BICT, pretendo seguir minha formação no curso
-                        de
-                        Engenharia da Computação no segundo ciclo.</p>
+            <div class="scroll-indicator">
+                <div class="scroll-line"></div>
+                <span>Scroll</span>
+            </div>
+        </section>
+
+        <section class="about" id="about">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Sobre mim</span>
+                    <h2 class="section-title">Quem sou eu</h2>
                 </div>
 
-            </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p class="about-intro">
+                            Sou um analista de dados apaixonado por descobrir padrões ocultos e transformar informações brutas em estratégias de negócio eficazes.
+                        </p>
+                        <p>
+                            Com formação em Ciência e Tecnologia pela UFMA e experiência prática em desenvolvimento back-end, combino conhecimento técnico sólido com visão analítica para entregar soluções que realmente fazem a diferença.
+                        </p>
+                        <p>
+                            Minha abordagem interdisciplinar me permite conectar dados, tecnologia e negócios de forma única, sempre buscando insights que impulsionem o crescimento e a inovação.
+                        </p>
 
-            <div class="timeline-item">
-                <div class="timeline-dot"></div>
-                <div class="timeline-date">2024 - 2024</div>
-                <div class="timeline-content">
-                    <h3>Bolsista Back-end programa Trilhas - Inova Maranhão</h3>
-                    <p>Fui bolsista do programa Trilhas, uma iniciativa da Secretaria de Ciência, Tecnologia e
-                        Inovação
-                        do Estado do Maranhão (Secti-MA), onde me especializei no desenvolvimento Back-end com Node.Js.
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <span class="stat-number">2+</span>
+                                <span class="stat-label">Anos de Experiência</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Projetos Concluídos</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Tecnologias</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-skills">
+                        <h3>Principais Competências</h3>
+                        <div class="skills-list">
+                            <div class="skill-tag">Análise de Dados</div>
+                            <div class="skill-tag">Python</div>
+                            <div class="skill-tag">SQL</div>
+                            <div class="skill-tag">Power BI</div>
+                            <div class="skill-tag">Machine Learning</div>
+                            <div class="skill-tag">Estatística</div>
+                            <div class="skill-tag">Node.js</div>
+                            <div class="skill-tag">Data Visualization</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Trajetória</span>
+                    <h2 class="section-title">Experiência & Educação</h2>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item" data-aos="fade-up">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Bacharelado em Ciência e Tecnologia</h3>
+                                <span class="timeline-date">2023 - Presente</span>
+                            </div>
+                            <p class="timeline-location">Universidade Federal do Maranhão</p>
+                            <p class="timeline-description">
+                                Formação interdisciplinar abrangendo desde Administração de Empresas até Ciência de Dados, 
+                                Algoritmos, Probabilidade e Estatística, Álgebra Linear e Engenharia de Software. 
+                                Preparação para especialização em Engenharia da Computação.
+                            </p>
+                            <div class="timeline-skills">
+                                <span>Ciência de Dados</span>
+                                <span>Algoritmos</span>
+                                <span>Estatística</span>
+                                <span>Álgebra Linear</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="200">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Bolsista Back-end - Programa Trilhas</h3>
+                                <span class="timeline-date">2024</span>
+                            </div>
+                            <p class="timeline-location">Inova Maranhão - SECTI-MA</p>
+                            <p class="timeline-description">
+                                Especialização em desenvolvimento Back-end com Node.js através do programa Trilhas, 
+                                uma iniciativa da Secretaria de Ciência, Tecnologia e Inovação do Estado do Maranhão.
+                            </p>
+                            <div class="timeline-skills">
+                                <span>Node.js</span>
+                                <span>JavaScript</span>
+                                <span>APIs REST</span>
+                                <span>Banco de Dados</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" data-aos="fade-up" data-aos-delay="400">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Ensino Médio</h3>
+                                <span class="timeline-date">2018 - 2020</span>
+                            </div>
+                            <p class="timeline-location">Formação Básica</p>
+                            <p class="timeline-description">
+                                Conclusão do ensino médio com foco em exatas, desenvolvendo base sólida em 
+                                matemática e ciências que fundamentaram minha trajetória em tecnologia.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Tecnologias</span>
+                    <h2 class="section-title">Minhas Habilidades</h2>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category" data-aos="fade-up">
+                        <div class="category-header">
+                            <i class='bx bx-data'></i>
+                            <h3>Análise de Dados</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class='bx bxl-python'></i>
+                                <span>Python</span>
+                                <div class="skill-level" data-level="90"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bx-data'></i>
+                                <span>SQL</span>
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bx-bar-chart-alt-2'></i>
+                                <span>Power BI</span>
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bx-math'></i>
+                                <span>Estatística</span>
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                        <div class="category-header">
+                            <i class='bx bx-code-alt'></i>
+                            <h3>Desenvolvimento</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class='bx bxl-nodejs'></i>
+                                <span>Node.js</span>
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bxl-javascript'></i>
+                                <span>JavaScript</span>
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bx-git-branch'></i>
+                                <span>Git</span>
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bx-server'></i>
+                                <span>APIs REST</span>
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category" data-aos="fade-up" data-aos-delay="400">
+                        <div class="category-header">
+                            <i class='bx bx-brain'></i>
+                            <h3>Machine Learning</h3>
+                        </div>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <i class='bx bx-bot'></i>
+                                <span>Scikit-learn</span>
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bx-line-chart'></i>
+                                <span>Pandas</span>
+                                <div class="skill-level" data-level="85"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bx-scatter-chart'></i>
+                                <span>NumPy</span>
+                                <div class="skill-level" data-level="80"></div>
+                            </div>
+                            <div class="skill-item">
+                                <i class='bx bx-chart'></i>
+                                <span>Matplotlib</span>
+                                <div class="skill-level" data-level="75"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="projects" id="projects">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Portfolio</span>
+                    <h2 class="section-title">Meus Projetos</h2>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card" data-aos="fade-up">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Análise de Vendas">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Dashboard de Análise de Vendas</h3>
+                            <p>Sistema completo de análise de vendas com visualizações interativas e insights automatizados usando Power BI e Python.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Power BI</span>
+                                <span>SQL</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Predição de Preços">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Modelo de Predição de Preços</h3>
+                            <p>Algoritmo de machine learning para predição de preços imobiliários com 92% de precisão usando regressão linear e random forest.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>Jupyter</span>
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="400">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="API de Dados">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>API de Análise de Dados</h3>
+                            <p>API RESTful desenvolvida em Node.js para processamento e análise de grandes volumes de dados em tempo real.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card" data-aos="fade-up" data-aos-delay="600">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dashboard Financeiro">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="#" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="#" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Dashboard Financeiro Interativo</h3>
+                            <p>Painel executivo para análise financeira com KPIs automatizados e alertas inteligentes para tomada de decisão.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>D3.js</span>
+                                <span>Python</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="projects-cta">
+                    <a href="https://github.com/FabinDr" target="_blank" class="btn btn-outline">
+                        <span>Ver Todos os Projetos</span>
+                        <i class='bx bxl-github'></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Contato</span>
+                    <h2 class="section-title">Vamos Trabalhar Juntos</h2>
+                    <p class="section-description">
+                        Estou sempre aberto a novas oportunidades e projetos desafiadores. 
+                        Entre em contato para discutirmos como posso ajudar sua empresa.
                     </p>
                 </div>
 
-            </div>
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item" data-aos="fade-up">
+                            <div class="contact-icon">
+                                <i class='bx bx-envelope'></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Email</h3>
+                                <p>fabio.duarte@email.com</p>
+                            </div>
+                        </div>
 
-            <!-- <div class="timeline-item">
-                <div class="timeline-dot">
-                    <div class="timeline-date">2023 - </div>
-                    <div class="timeline-content">
-                        <h3>Estágio</h3>
-                        <p>
-                        </p>
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="200">
+                            <div class="contact-icon">
+                                <i class='bx bxl-linkedin'></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>LinkedIn</h3>
+                                <p>linkedin.com/in/fabioduarte-ic</p>
+                            </div>
+                        </div>
+
+                        <div class="contact-item" data-aos="fade-up" data-aos-delay="400">
+                            <div class="contact-icon">
+                                <i class='bx bx-map'></i>
+                            </div>
+                            <div class="contact-details">
+                                <h3>Localização</h3>
+                                <p>São Luís, Maranhão</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="contact-cta">
+                        <p>Acesse meu LinkedIn para ver experiências completas e certificados</p>
+                        <a href="https://www.linkedin.com/in/fabioduarte-ic/" target="_blank" class="btn btn-primary">
+                            <span>Conectar no LinkedIn</span>
+                            <i class='bx bxl-linkedin'></i>
+                        </a>
                     </div>
                 </div>
-            </div> -->
+            </div>
+        </section>
+    </main>
 
-        </div>
-    </section>
-
-
-
-
-
-
-    <section class="tecnologias">
-        <h2 class="heading">Minhas habilidades</h2>
-
-    </section>
-
-    <section class="projects">
-        <h2 class="heading"> Meus Projetos</h2>
-    </section>
-
-    <section class="contato">
-        <p>Acesse o LinkedIn para ver minhas experiências e certificados</p>
-
-
-    </section>
-
-    <script src="script.js"></script>
-    <footer class="_footer_1bb7q_1">
-        <div class="_container_1bb7q_6 container">
-            <p class="_content_1bb7q_10"> © 2025 Todos os direitos reservados.</p>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <p>&copy; 2025 Fabio Duarte. Todos os direitos reservados.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">Sobre</a>
+                    <a href="#projects">Projetos</a>
+                    <a href="#contact">Contato</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>
