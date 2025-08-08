@@ -31,7 +31,12 @@ const translations = {
     
     // Experience Section
     experienceTag: 'Trajetória',
-    experienceTitle: 'Experiência & Educação',
+    experienceTitle: 'Experiência Profissional',
+    
+    // Education Section
+    educationTag: 'Formação',
+    educationTitle: 'Formação Acadêmica',
+    educationDescription: 'Educação não é o aprendizado de fatos, mas o treinamento da mente para pensar.',
     
     // Skills Section
     skillsTag: 'Tecnologias',
@@ -50,6 +55,9 @@ const translations = {
     webDev: 'Desenvolvimento',
     dashboard: 'Dashboards',
     viewAllProjects: 'Ver Todos os Projetos',
+    allProjectsTitle: 'Todos os Projetos',
+    allProjectsDescription: 'Explore minha coleção completa de projetos em análise de dados, machine learning e desenvolvimento de software.',
+    backToPortfolio: 'Voltar ao Portfólio',
     
     // Contact Section
     contactTag: 'Contato',
@@ -66,6 +74,12 @@ const translations = {
     
     // Footer
     footerText: 'Todos os direitos reservados.',
+    footerDescription: 'Analista de dados especializado em transformar informações complexas em insights estratégicos para impulsionar o crescimento dos negócios.',
+    navigation: 'Navegação',
+    services: 'Serviços',
+    consulting: 'Consultoria',
+    madeWith: 'Feito com',
+    andTech: 'e tecnologia',
     
     // Accessibility
     audioOn: 'Áudio Ativado',
@@ -125,7 +139,12 @@ const translations = {
     
     // Experience Section
     experienceTag: 'Journey',
-    experienceTitle: 'Experience & Education',
+    experienceTitle: 'Professional Experience',
+    
+    // Education Section
+    educationTag: 'Education',
+    educationTitle: 'Academic Background',
+    educationDescription: 'Education is not the learning of facts, but the training of the mind to think.',
     
     // Skills Section
     skillsTag: 'Technologies',
@@ -144,6 +163,9 @@ const translations = {
     webDev: 'Development',
     dashboard: 'Dashboards',
     viewAllProjects: 'View All Projects',
+    allProjectsTitle: 'All Projects',
+    allProjectsDescription: 'Explore my complete collection of projects in data analysis, machine learning and software development.',
+    backToPortfolio: 'Back to Portfolio',
     
     // Contact Section
     contactTag: 'Contact',
@@ -160,6 +182,12 @@ const translations = {
     
     // Footer
     footerText: 'All rights reserved.',
+    footerDescription: 'Data analyst specialized in transforming complex information into strategic insights to drive business growth.',
+    navigation: 'Navigation',
+    services: 'Services',
+    consulting: 'Consulting',
+    madeWith: 'Made with',
+    andTech: 'and technology',
     
     // Accessibility
     audioOn: 'Audio On',

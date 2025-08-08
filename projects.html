@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projetos - Fabio Duarte</title>
+    <meta name="description" content="Todos os projetos de Fabio Duarte - Analista de Dados">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/svg+xml" href="logo.svg">
+</head>
+
+<body>
+    <div class="cursor-dot" data-cursor-dot></div>
+    <div class="cursor-outline" data-cursor-outline></div>
+
+    <header class="header">
+        <div class="header-content">
+            <div class="logo-container">
+                <img class="img-logo" src="logo.svg" alt="Logo">
+                <a href="index.html" class="logo">Fabio <span>Duarte</span></a>
+            </div>
+
+            <nav class="navbar">
+                <a href="index.html" class="nav-link" data-translate="backToPortfolio">Voltar ao Portfólio</a>
+            </nav>
+
+            <div class="accessibility-controls">
+                <button class="accessibility-btn theme-toggle" aria-label="Alternar tema">
+                    <i class='bx bx-sun'></i>
+                </button>
+                <button class="accessibility-btn lang-toggle" aria-label="Alterar idioma">
+                    <span class="lang-text">EN</span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="projects-page">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag" data-translate="projectsTag">Portfolio</span>
+                    <h1 class="section-title" data-translate="allProjectsTitle">Todos os Projetos</h1>
+                    <p class="section-description" data-translate="allProjectsDescription">
+                        Explore minha coleção completa de projetos em análise de dados, machine learning e desenvolvimento de software.
+                    </p>
+                </div>
+
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all" data-translate="all">Todos</button>
+                    <button class="filter-btn" data-filter="data-analysis" data-translate="dataAnalysisFilter">Análise de Dados</button>
+                    <button class="filter-btn" data-filter="machine-learning" data-translate="machineLearningFilter">Machine Learning</button>
+                    <button class="filter-btn" data-filter="web-dev" data-translate="webDev">Desenvolvimento</button>
+                    <button class="filter-btn" data-filter="dashboard" data-translate="dashboard">Dashboards</button>
+                </div>
+
+                <div class="projects-grid projects-grid-full">
+                    <!-- Projetos existentes -->
+                    <div class="project-card animate-element" data-category="data-analysis dashboard">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Análise de Vendas">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Dashboard de Análise de Vendas</h3>
+                            <p>Sistema completo de análise de vendas com visualizações interativas e insights automatizados usando Power BI e Python.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Power BI</span>
+                                <span>SQL</span>
+                                <span>Pandas</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="machine-learning">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/669610/pexels-photo-669610.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Predição de Preços">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Modelo de Predição de Preços</h3>
+                            <p>Algoritmo de machine learning para predição de preços imobiliários com 92% de precisão usando regressão linear e random forest.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>Scikit-learn</span>
+                                <span>Jupyter</span>
+                                <span>Matplotlib</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="web-dev">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/265087/pexels-photo-265087.jpeg?auto=compress&cs=tinysrgb&w=800" alt="API de Dados">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>API de Análise de Dados</h3>
+                            <p>API RESTful desenvolvida em Node.js para processamento e análise de grandes volumes de dados em tempo real.</p>
+                            <div class="project-tech">
+                                <span>Node.js</span>
+                                <span>Express</span>
+                                <span>MongoDB</span>
+                                <span>Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="dashboard data-analysis">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/159888/pexels-photo-159888.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Dashboard Financeiro">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Dashboard Financeiro Interativo</h3>
+                            <p>Painel executivo para análise financeira com KPIs automatizados e alertas inteligentes para tomada de decisão.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>D3.js</span>
+                                <span>Python</span>
+                                <span>PostgreSQL</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="machine-learning data-analysis">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/8386440/pexels-photo-8386440.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Análise Preditiva">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sistema de Análise Preditiva</h3>
+                            <p>Modelo avançado de machine learning para previsão de tendências de mercado com análise de sentimento e processamento de linguagem natural.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>NLTK</span>
+                                <span>Streamlit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="web-dev dashboard">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/577585/pexels-photo-577585.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Plataforma Analytics">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Plataforma de Analytics</h3>
+                            <p>Aplicação web completa para análise de dados em tempo real com dashboards interativos e relatórios automatizados.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Node.js</span>
+                                <span>Chart.js</span>
+                                <span>MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Projetos adicionais -->
+                    <div class="project-card animate-element" data-category="data-analysis">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/7947664/pexels-photo-7947664.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Análise de Sentimentos">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Análise de Sentimentos em Redes Sociais</h3>
+                            <p>Sistema de análise de sentimentos para monitoramento de marca em tempo real usando processamento de linguagem natural.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>NLTK</span>
+                                <span>Twitter API</span>
+                                <span>Streamlit</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="machine-learning">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/8728380/pexels-photo-8728380.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Classificação de Imagens">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Classificador de Imagens com CNN</h3>
+                            <p>Modelo de deep learning para classificação automática de imagens usando redes neurais convolucionais com 95% de precisão.</p>
+                            <div class="project-tech">
+                                <span>Python</span>
+                                <span>TensorFlow</span>
+                                <span>Keras</span>
+                                <span>OpenCV</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card animate-element" data-category="web-dev">
+                        <div class="project-image">
+                            <img src="https://images.pexels.com/photos/4164418/pexels-photo-4164418.jpeg?auto=compress&cs=tinysrgb&w=800" alt="Sistema de Recomendação">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver projeto">
+                                        <i class='bx bx-link-external'></i>
+                                    </a>
+                                    <a href="https://github.com/FabinDr" target="_blank" class="project-link" aria-label="Ver código">
+                                        <i class='bx bxl-github'></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <h3>Sistema de Recomendação E-commerce</h3>
+                            <p>Plataforma web com sistema de recomendação inteligente baseado em comportamento do usuário e filtragem colaborativa.</p>
+                            <div class="project-tech">
+                                <span>React</span>
+                                <span>Python</span>
+                                <span>FastAPI</span>
+                                <span>Redis</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="back-to-portfolio">
+                    <a href="index.html" class="btn btn-primary">
+                        <i class='bx bx-left-arrow-alt'></i>
+                        <span data-translate="backToPortfolio">Voltar ao Portfólio</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-main">
+                    <div class="footer-brand">
+                        <div class="footer-logo">
+                            <img src="logo.svg" alt="Logo" class="footer-logo-img">
+                            <span class="footer-brand-name">Fabio <span>Duarte</span></span>
+                        </div>
+                        <p class="footer-description" data-translate="footerDescription">
+                            Analista de dados especializado em transformar informações complexas em insights estratégicos para impulsionar o crescimento dos negócios.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="footer-bottom">
+                    <div class="footer-copyright">
+                        <p>&copy; 2025 Fabio Duarte. <span data-translate="footerText">Todos os direitos reservados.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="translations.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
