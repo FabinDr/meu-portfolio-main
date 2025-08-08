@@ -10,13 +10,8 @@ const translations = {
     contact: 'Contato',
     
     // Hero Section
-    greeting: 'Olá, eu sou',
-    heroTitle: 'Fabio Duarte',
     heroSubtitle: [
-      'Analista de Dados',
-      'Desenvolvedor Back-end',
-      'Especialista em Python',
-      'Data Scientist'
+      'Analista de Dados'
     ],
     heroDescription: 'Especialista em transformar dados complexos em insights estratégicos que impulsionam decisões de negócio e geram valor real para organizações.',
     viewProjects: 'Ver Projetos',
@@ -68,7 +63,6 @@ const translations = {
     subject: 'Assunto',
     message: 'Mensagem',
     sendMessage: 'Enviar Mensagem',
-    connectLinkedIn: 'Ou conecte-se comigo no LinkedIn',
     
     // Footer
     footerText: 'Todos os direitos reservados.',
@@ -110,13 +104,8 @@ const translations = {
     contact: 'Contact',
     
     // Hero Section
-    greeting: 'Hello, I am',
-    heroTitle: 'Fabio Duarte',
     heroSubtitle: [
-      'Data Analyst',
-      'Back-end Developer',
-      'Python Specialist',
-      'Data Scientist'
+      'Data Analyst'
     ],
     heroDescription: 'Specialist in transforming complex data into strategic insights that drive business decisions and generate real value for organizations.',
     viewProjects: 'View Projects',
@@ -168,7 +157,6 @@ const translations = {
     subject: 'Subject',
     message: 'Message',
     sendMessage: 'Send Message',
-    connectLinkedIn: 'Or connect with me on LinkedIn',
     
     // Footer
     footerText: 'All rights reserved.',

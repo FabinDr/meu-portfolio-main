@@ -108,10 +108,7 @@ const navigation = {
 const typewriter = {
   element: document.querySelector('.typing-text'),
   texts: [
-    'Analista de Dados',
-    'Desenvolvedor Back-end',
-    'Especialista em Python',
-    'Data Scientist'
+    'Analista de Dados'
   ],
   currentTextIndex: 0,
   currentCharIndex: 0,
